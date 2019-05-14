@@ -98,6 +98,6 @@ server {
 
 This will have request redirect from clients to "localhost:3000" , react project when users requests http://18.202.179.5/
 
-If you want to contact me, please email to jinpeng0429@outlook.com.
+If you want to contact me, please email to anywhere0811@gmail.com.
 At the same time, this is my skype address.
 
