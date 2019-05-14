@@ -1,0 +1,32 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.10.2",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.2",
+    "classnames": "^2.2.6",
+    "dateformat": "^3.0.3",
+    "jwt-decode": "^2.2.0",
+    "react": "^16.4.1",
+    "react-addons-update": "^15.6.2",
+    "react-csv": "^1.0.18",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-stripe-checkout": "^2.6.3",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "reqwest": "^2.0.5",
+    "web3": "^0.20.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:5000"
+}

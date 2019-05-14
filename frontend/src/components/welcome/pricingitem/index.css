@@ -1,0 +1,9 @@
+.price{
+    font-size: 70px
+}
+.button{
+    border-radius: 20px;
+    color:#00d563;
+    width: 160px;
+    height: 40px;
+}

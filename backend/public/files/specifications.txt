@@ -1,0 +1,100 @@
+Project:
+
+project will have authentication with 3 different views.
+
+admin view
+	can manage subscriptions and dentists/operators accounts
+
+dentist view (the customer)
+	can manage his own subscriptions, upload files when subscription is enabled. can edit his info.
+
+operator view (the employee)
+sort all the files in the main operator page and go into a specific file view to perform his tasks which are:
+	-when taking a file - add/edit his name - edit status - add/edit remarks
+
+Register page:
+*fullname
+*phone
+*email
+adress
+adeli number
+
+terms and conditions checkbox to approve
+
+Interface Admin Page:
+-can check each operator work history and download their work history excel file
+the admin will be able to see the status of each file taken by the operator with the name of the operator next to the status of the specific file.
+
+example:
+
+operator1:
+file 1 - (dentist1) - status successful - date dd/mm/yy
+file 2 - (dentist1) - in progress - date dd/mm/yy
+file 3 - (dentist2) - unsucess full - date dd/mm/yy
+
+operator2:
+file 1 - (dentist56) - status successful - date dd/mm/yy
+file 2 - (dentist58) - in progress - date dd/mm/yy
+file 3 - (dentist227)- unsucessfull - date dd/mm/yy
+
+-can manage subscriptions coming from dentists
+-can create/edit/delete operators account
+-can create/edit/delete dentists account
+
+
+Interface Dentist Page:
+-can edit his profile information
+-can manage his subscriptions (switch between different subscriptions, cancel his subscription, leave a feedback)
+-when subscription is enabled:
+  Based on the offer he will able to upload a file (which is a dentist quote for a customer).
+  There is a number limit of how much files he can upload based on the subscription model.
+  offer1: 50 file upload
+  offer2: 200 file upload
+  offer3: illimited file upload
+
+  After uploading the file he will be able to see the status of the file concerned for each file.
+  status 1: successful
+  status 2: unsuccessful
+  status 3: in progress
+
+  example:
+  file 1 - status successful
+  file 2 - status successful
+  file 3 - status unsuccessful
+  file 4 - status in progress
+
+  and so on ...
+
+
+Interface Operator Page:
+
+The Operator will be able to see all the files uploaded by each dentist.
+  example:
+
+  search and filter bar (you can search/filter by dentist name, by operator name, by date)
+  file 1 - (dentist1) - status successful - date dd/mm/yy -  operator 28
+  file 2 - (dentist1) - in progress - date dd/mm/yy - operator 1
+  file 3 - (dentist2) - unsucessfull - date dd/mm/yy -  operator 35
+
+  and so on...
+
+**The Operator will be able to click on a specific file leading to a new route of the file id. 
+    Then, the operator will be able to add/edit the status of each file (by default it will always be "in progress").
+    The Operator will also be able to add/edit the operator name (by default it will be empty). This feature will be logged, meaning if a new operator takes the file, we will see the previous operator owner.
+    The Operator will also be able to add/edit remarks.This feature will be logged and we will be able to see all the remarks.
+
+Basically operator will be able to see the list of all the files uploaded by each dentist with each status, sort them in the main page and update by going inside each file id view.
+
+On the main page of the operators, they will have access to external links and be able to download excel files uploaded by the company.
+
+
+
+Technologies to do this project:
+ front-end: react-redux
+ back-end: nodejs-mongodb
+ ui: clean and elegant ui (material-ui is fine or bootstrap 4++)
+
+Requirements:
+-apply dry principles.
+-clean, structured and organized code.
+
